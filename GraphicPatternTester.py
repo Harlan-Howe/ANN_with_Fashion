@@ -10,17 +10,20 @@ from matplotlib import pyplot as plt
 # red, green, yellow, blue, orange, white
 colors = ((0, 0, 1), (0, 1, 0), (0, 1, 1), (1, 0, 0), (0, 0.5, 1), (1, 1, 1))
 
+PATTERN_SPIRAL = 0
+PATTERN_HEX = 1
+PATTERN_DOTS = 2
 
 class GraphicPatternTester:
 
     def __init__(self):
         self.hex_point_list = None
 
-    def generate_data(self, N: int, num_bins: int = 4, which_pattern: int = 0) \
+    def generate_data(self, N: int, num_bins: int = 4, which_pattern: int = PATTERN_SPIRAL) \
             -> Tuple[List[np.ndarray], List[np.ndarray]]:
-        if which_pattern == 1:
+        if which_pattern == PATTERN_HEX:
             return self.generate_hex_data(N, num_bins)
-        if which_pattern == 2:
+        if which_pattern == PATTERN_DOTS:
             return self.generate_dots_data(N, num_bins)
         else:
             return self.generate_spiral_data(N, num_bins)
