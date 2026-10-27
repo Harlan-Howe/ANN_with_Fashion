@@ -185,7 +185,7 @@ class ANN:
         # ----------------------------------------
         return errors
 
-    def update_weights(self, error_per_layer: List[np.ndarray], alpha: float = 0.02):
+    def update_weights(self, error_per_layer: List[np.ndarray], alpha: float = 0.002):
         """
         Uses the backpropagated errors sent from the weight matrices to each layer and the outputs (y_hat) from the
         previous layer that fed into that weight matrix to determine a correction to the weight matrix. This is
@@ -196,12 +196,16 @@ class ANN:
         postcondition: the weight matrices have been updated.
         """
         # TODO #2: for each weight matrix:
-        #  1) Add the bias node to the y-hat from the layer feeding this matrix to get the x_values for the matrix.
+        #  1) Add the bias node to the y-hat from the layer feeding (i.e. BEFORE) this matrix to get the x_values for
+        #  the matrix.
         #     (Hint: there's a method in this class that does this.)
-        #  2) Use the a error matrix you found earlier (error_per_layer) for the "a" level of the next layer (size M)
-        #  and that list of x values (size N+1) to generate a correction matrix, which is ((N+1) x M).
-        #  3) Update the value of the weight matrix by multipling this correction by alpha and subtracting it from the
-        #     weight matrix.
+        #  2) Use the list of x values (size N+1 x 1) that you just calculated that represents the inputs BEFORE the
+        #  weight matrix and the "a" error matrix you found in calculate_errors() method (one of the error_per_layers
+        #  you received as a parameter) for the "a" level of the layer (size M x 1) AFTER the weight matrix to generate
+        #  a correction matrix, which is (size (N+1) x M) - and which should be the same size as this weights matrix.
+        #  (Hint: See slide 39, "Matrix multiplication in numpy → interpretation," of notes.)
+        #  3) Update the value of the weight matrix by multiplying this correction by alpha and decreasing this weight
+        #  matrix by that amount, element-wise. (Which you can do because they are the same size.)
 
         # ----------------------------------
 
