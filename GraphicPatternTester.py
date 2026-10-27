@@ -151,12 +151,12 @@ if __name__ == "__main__":
 
     st = GraphicPatternTester()
     NUM_BINS = 5
-    WHICH_PATTERN = 0  # 0=spiral, 1 = hex, 2= dots
+    which_pattern = PATTERN_SPIRAL  # spiral, hex, or dots
 
     # generate the data sets for training, validation and testing
-    train_inp, train_outp = st.generate_data(N=2000, num_bins=NUM_BINS, which_pattern=WHICH_PATTERN)
-    validate_inp, validate_outp = st.generate_data(N=100, num_bins=NUM_BINS, which_pattern=WHICH_PATTERN)
-    test_in, test_out = st.generate_data(N=1000, num_bins=NUM_BINS, which_pattern=WHICH_PATTERN)
+    train_inp, train_outp = st.generate_data(N=2000, num_bins=NUM_BINS, which_pattern=which_pattern)
+    validate_inp, validate_outp = st.generate_data(N=100, num_bins=NUM_BINS, which_pattern=which_pattern)
+    test_in, test_out = st.generate_data(N=1000, num_bins=NUM_BINS, which_pattern=which_pattern)
 
     # create the window for the graphics and draw the "training" solution data in the upper left corner.
     image = np.zeros([600, 600, 3], dtype=float)
