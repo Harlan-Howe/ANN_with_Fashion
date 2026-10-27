@@ -170,17 +170,20 @@ class ANN:
         # Record this error in the "errors" list.
         errors.append(last_error)  # this should wind up as the last element in this array, since it was the last layer.
 
-        # TODO #1: loop backwards through the hidden layers. For each hidden layer, use the matrix that leads from this
-        #       to the layer whose error you just found to calculate the error:
-        #       1) apply (error_for_next_layer • weight_matrix^T) to get the difference at the "y-hat" level of this
+        # TODO #1: loop backwards through the hidden layers. For error for a layer, use the weight matrix that leads
+        #       to the layer whose error you just found and the derivative of the activation function to calculate the
+        #       error received by the previous layer:
+        #       1) Apply (error_for_next_layer • weight_matrix.transpose()) to get the difference at the "y-hat" level of this
         #       layer. This will be one longer than the number of nodes in this layer, because of the shape of the
         #       weight matrix.
-        #       2) remove the last value, which corresponds to the bias.
-        #       3) cellwise multiply that reduced error at the y_hat layer by the f_activation'(y_hat) for this layer to
+        #       2) Remove the last value, which corresponds to the bias.
+        #       3) Cellwise multiply that reduced error at the y_hat layer by the f_activation'(y_hat) for this layer to
         #          find the error for this layer.
-        #       4) Be sure to record each layer's errors into the errors list, so they wind up in order.
+        #       4) Be sure to record each layer's errors into the errors list, so they wind up in order. Since you are
+        #       working backwards, think about where this error layer should go in the list (and, consequently, where
+        #       this error layer will come from in step 1).
         #   There is no error for the input layer, just the hidden ones and the output layer. (So these errors are
-        #   always and only found for the input to the next layer after a weight matrix.)
+        #   always and only found for the input to the next layer AFTER a weight matrix.)
 
         # ----------------------------------------
         return errors
