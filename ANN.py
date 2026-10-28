@@ -14,7 +14,7 @@ class ANN:
         # set up and randomize the weight matrices between layers
         self.weight_matrices: List[np.ndarray] = []
         for i in range(0, len(self.layer_sizes)-1):
-            self.weight_matrices.append(np.random.rand(layer_sizes[i]+1, layer_sizes[i+1]))
+            self.weight_matrices.append(np.random.rand(layer_sizes[i]+1, layer_sizes[i+1])*2-1)
 
         # set up the list of activation ids
         self.activation_functions = []
