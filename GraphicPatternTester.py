@@ -1,6 +1,6 @@
 import numpy as np
 import cv2
-from typing import List, Tuple
+from typing import List, Tuple, Optional
 import random
 import math
 from ANN import ANN
@@ -153,6 +153,12 @@ if __name__ == "__main__":
     NUM_BINS = 5
     which_pattern = PATTERN_SPIRAL  # spiral, hex, or dots
 
+    file_name: Optional[str] = None
+    shouldLoadFile = input("Do you want to load a previous ANN? (Y/N) ").lower()
+    if shouldLoadFile[0] == "y":
+        file_name = input("What is the name of the file? ")
+
+
     # generate the data sets for training, validation and testing
     train_inp, train_outp = st.generate_data(N=2000, num_bins=NUM_BINS, which_pattern=which_pattern)
     validate_inp, validate_outp = st.generate_data(N=100, num_bins=NUM_BINS, which_pattern=which_pattern)
@@ -165,14 +171,14 @@ if __name__ == "__main__":
 
     # create our neural network. The input layer is size 2 (x,y), and the output layer is size NUM_BINS - a one-hot
     #                             representation of the bins
-    myAnn = ANN([2, 20, 10, 10, NUM_BINS], activation_ids=[ActivationType.IDENTITY,
-                                                           ActivationType.SIGMOID,
-                                                           ActivationType.SIGMOID,
-                                                           ActivationType.SIGMOID,
-                                                           ActivationType.SIGMOID])
-    # TODO Optional: If you would like to continue training an ANN you started earlier (assuming you are training on
-    #  the same image and num bins), replace the previous line with the following:
-    #  myAnn = ANN.fromFile(filename)
+    if file_name is None:
+        myAnn = ANN([2, 20, 10, 10, NUM_BINS], activation_ids=[ActivationType.IDENTITY,
+                                                               ActivationType.SIGMOID,
+                                                               ActivationType.SIGMOID,
+                                                               ActivationType.SIGMOID,
+                                                               ActivationType.SIGMOID])
+    else:
+        myAnn = ANN.fromFile(file_name)
 
     RUNS_PER_IMAGE = 25
     ALPHA = 0.05
