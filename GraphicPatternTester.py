@@ -170,6 +170,9 @@ if __name__ == "__main__":
                                                            ActivationType.SIGMOID,
                                                            ActivationType.SIGMOID,
                                                            ActivationType.SIGMOID])
+    # TODO Optional: If you would like to continue training an ANN you started earlier (assuming you are training on
+    #  the same image and num bins), replace the previous line with the following:
+    #  myAnn = ANN.fromFile(filename)
 
     RUNS_PER_IMAGE = 25
     ALPHA = 0.05
