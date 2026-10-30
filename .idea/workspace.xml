@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d500e85-48be-4100-9228-b1babbc1ef4d" name="Default Changelist" comment="Loading data, testANN file">
+    <list default="true" id="9d500e85-48be-4100-9228-b1babbc1ef4d" name="Default Changelist" comment="Renamed from &quot;Tester&quot; to &quot;Runner&quot; for clarity">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GraphicPatternTester.py" beforeDir="false" afterPath="$PROJECT_DIR$/GraphicPatternTester.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,8 +62,10 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/harlan.howe/PycharmProjects/ANN_with_Fashion&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
@@ -76,7 +77,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.FashionTester">
+  <component name="RunManager" selected="Python.FashionRunner">
     <configuration name="ANN" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ANN" />
       <option name="ENV_FILES" value="" />
@@ -101,7 +102,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="FashionTester" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="FashionRunner" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ANN" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -116,7 +117,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="DEBUG_JUST_MY_CODE" value="true" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FashionTester.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FashionRunner.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -125,7 +126,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="GraphicPatternTester" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="GraphicPatternRunner" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ANN" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -140,7 +141,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="DEBUG_JUST_MY_CODE" value="true" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GraphicPatternTester.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GraphicPatternRunner.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -149,7 +150,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="TrigTester" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="TrigRunner" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ANN" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -164,7 +165,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="DEBUG_JUST_MY_CODE" value="true" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TrigTester.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TrigRunner.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -249,7 +250,7 @@
       <option name="docutils_open_in_browser" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for ANN_Test.MyTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for ANN_Test_Predict.MyTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="ANN" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -262,7 +263,7 @@
       <option name="DEBUG_JUST_MY_CODE" value="true" />
       <option name="RUN_TOOL" value="" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;ANN_Test.MyTestCase&quot;" />
+      <option name="_new_target" value="&quot;ANN_Test_Predict.MyTestCase&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -306,11 +307,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.FashionTester" />
+        <item itemvalue="Python.FashionRunner" />
         <item itemvalue="Python.ANN" />
-        <item itemvalue="Python.GraphicPatternTester" />
-        <item itemvalue="Python.TrigTester" />
-        <item itemvalue="Python tests.Python tests for ANN_Test.MyTestCase" />
+        <item itemvalue="Python.GraphicPatternRunner" />
+        <item itemvalue="Python.TrigRunner" />
+        <item itemvalue="Python tests.Python tests for ANN_Test_Predict.MyTestCase" />
       </list>
     </recent_temporary>
   </component>
@@ -474,7 +475,111 @@
       <option name="project" value="LOCAL" />
       <updated>1793022468148</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Pulled constants out for pattern types.">
+      <option name="closed" value="true" />
+      <created>1793124175158</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1793124175158</updated>
+    </task>
+    <task id="LOCAL-00020" summary="cleanup on constants.">
+      <option name="closed" value="true" />
+      <created>1793124295803</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1793124295803</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Fashion Tester ready to display results.">
+      <option name="closed" value="true" />
+      <created>1793125172749</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1793125172749</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Extracted methods for text and graphics.&#10;Fine-tuned graphics to show more predictions per page.">
+      <option name="closed" value="true" />
+      <created>1793129725980</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1793129725980</updated>
+    </task>
+    <task id="LOCAL-00023" summary="improved comments for update_weights, decreased default alpha.">
+      <option name="closed" value="true" />
+      <created>1793130544568</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1793130544568</updated>
+    </task>
+    <task id="LOCAL-00024" summary="improved comments for the calculate_errors TODO.">
+      <option name="closed" value="true" />
+      <created>1793130993484</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1793130993484</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Starts with an untrained ANN, but we can switch to the trained &quot;Fashion 81&quot; version quickly.">
+      <option name="closed" value="true" />
+      <created>1793202542940</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1793202542940</updated>
+    </task>
+    <task id="LOCAL-00026" summary="A new ANN starts with random values (-1,+1) instead of (0, 1).">
+      <option name="closed" value="true" />
+      <created>1793202568373</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1793202568373</updated>
+    </task>
+    <task id="LOCAL-00027" summary="deleted testANN.dat (which was output from a previous run of GraphicPatternTester.">
+      <option name="closed" value="true" />
+      <created>1793280675819</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1793280675819</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Added optional TODO to allow user to open a previous ANN file.">
+      <option name="closed" value="true" />
+      <created>1793280731165</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1793280731165</updated>
+    </task>
+    <task id="LOCAL-00029" summary="program asks whether to load previous ANN and filename, if so.">
+      <option name="closed" value="true" />
+      <created>1793280935522</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1793280935523</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Split ANN_Test into ANN_Test_Predict.py and ANN_Test_Training.py">
+      <option name="closed" value="true" />
+      <created>1793281068523</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1793281068523</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Renamed from &quot;Tester&quot; to &quot;Runner&quot; for clarity">
+      <option name="closed" value="true" />
+      <created>1793282059948</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1793282059948</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,9 +600,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Tried to upgrade to 3.11 and set Content Root. May still need to be done by each student...." />
-    <MESSAGE value="Style cleanup" />
-    <MESSAGE value="switched activations from tuple to list." />
     <MESSAGE value="style cleanup" />
     <MESSAGE value="Renamed project to remove date" />
     <MESSAGE value="Changing activations from a list to a tuple after filling it in." />
@@ -510,17 +612,19 @@
     <MESSAGE value="improved documentation and type hints for __init__() and build_activation_functions_list" />
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Loading data, testANN file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Loading data, testANN file" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/GraphicPatternTester.py</url>
-          <line>167</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Pulled constants out for pattern types." />
+    <MESSAGE value="cleanup on constants." />
+    <MESSAGE value="Fashion Tester ready to display results." />
+    <MESSAGE value="Extracted methods for text and graphics.&#10;Fine-tuned graphics to show more predictions per page." />
+    <MESSAGE value="improved comments for update_weights, decreased default alpha." />
+    <MESSAGE value="improved comments for the calculate_errors TODO." />
+    <MESSAGE value="Starts with an untrained ANN, but we can switch to the trained &quot;Fashion 81&quot; version quickly." />
+    <MESSAGE value="A new ANN starts with random values (-1,+1) instead of (0, 1)." />
+    <MESSAGE value="deleted testANN.dat (which was output from a previous run of GraphicPatternTester." />
+    <MESSAGE value="Added optional TODO to allow user to open a previous ANN file." />
+    <MESSAGE value="program asks whether to load previous ANN and filename, if so." />
+    <MESSAGE value="Split ANN_Test into ANN_Test_Predict.py and ANN_Test_Training.py" />
+    <MESSAGE value="Renamed from &quot;Tester&quot; to &quot;Runner&quot; for clarity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed from &quot;Tester&quot; to &quot;Runner&quot; for clarity" />
   </component>
 </project>
